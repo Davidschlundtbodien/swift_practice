@@ -47,3 +47,66 @@ while counter < 1 {
 repeat {
     print("This will print")
 } while counter < 1
+
+
+// If statement
+
+var temperatureF = 70
+
+if temperatureF < 20 {
+    print("It might be snowing")
+} else if temperatureF < 60 {
+    print("Wear a jacket")
+} else {
+    print("Its nice outside")
+}
+
+// Logical operator
+
+if temperatureF > 60 && temperatureF < 90 {
+    print("Its a great day")
+}
+
+var isRaining = true
+var isSnowing = false
+
+if isRaining || isSnowing {
+    print("The weather is terrible!")
+}
+
+if !isSnowing {
+    print("No snow day!")
+}
+
+if (isSnowing || isRaining) && temperatureF < 30 {
+    print("Just don't go outside today")
+}
+
+//Switch statement
+
+var gameCodes = ["RD2", "EFT", "D&D", "DnD"]
+
+switch gameCodes[0] {
+case "RD2":
+    print("Red Dead Redemption 2")
+case "EFT":
+    print("Escape From Tarkov")
+case "D&D":
+    print("Dungeons & Dragons")
+default:
+    print("Game unkown")
+}
+
+
+for code in gameCodes {
+    switch code {
+    case "RD2":
+        print("Red Dead Redemption 2")
+    case "EFT":
+        print("Escape From Tarkov")
+    case "D&D", "DnD":
+        print("Dungeons & Dragons")
+    default:
+        print("Game unkown")
+    }
+}
