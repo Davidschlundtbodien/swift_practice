@@ -34,3 +34,34 @@ todo.count
 todo.remove(at: 1)
 
 todo.count
+
+
+//Dictionaries
+
+var games: [String: String] = [
+    "EFT": "Escape From Tarkov",
+    "WF": "Warframe",
+    "D2": "Diablo 2",
+    "RD2": "Red Dead Redemption 2"
+]
+
+//Reading from a dictionary
+
+games["RD2"]
+
+//adding a k:v
+
+games["MW"] = "Modern War fare"
+
+//updating value
+games.updateValue("Modern Warfare", forKey: "MW")
+
+//Removing
+
+games["MW"] = nil
+
+games.removeValue(forKey: "WF")
+
+games
+
+
