@@ -4,6 +4,11 @@ struct Point {
     let x: Int
     let y: Int
     
+    init(x: Int, y: Int) {
+        self.x = x
+        self.y = y
+    }
+    
     ///Returns surronding points of current point
     func points(inRange range:Int = 1) -> [Point] {
         var results: [Point] = []
@@ -25,4 +30,6 @@ struct Point {
     }
 }
 
-let p1 = Point(x: 1, y: 3)
+let p1 = Point(x: 0, y: 0)
+
+p1.points()
